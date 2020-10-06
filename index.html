@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./style.css">
+
+        <title>Eletronic Ballot Box</title>
+    </head>
+
+    <body>
+        <div class="box-candidates">
+            <div class="title-buttons">
+                <button id="city-councilor">City councilor</button>
+                <button id="mayor">Mayor</button>
+            </div>
+            <div class="available-candidates">
+                <div class="candidate">
+                    <h2>Name: Docinho</h2>
+                    <h2>Number: 31555</h2>
+                </div>
+                <div class="candidate">
+                    <h2>Name: Folrzinha</h2>
+                    <h2>Number: 84666</h2>
+                </div>
+                <div class="candidate">
+                    <h2>Name: Lindinha</h2>
+                    <h2>Number: 80566</h2>
+                </div>
+            </div>
+
+        </div>
+        <div id="container">
+            <div class="screen">
+                <div class="d-1">
+                    <div class="d-1-left">
+                        <div class="d-1-1">
+                            <span>SEU VOTO PARA</span>
+                        </div>
+                        <div class="d-1-2">
+                            <span>Vereador</span>
+                        </div>
+                        <div class="d-1-3">
+                            <div class="number-write">
+                                <span>Número:</span>
+                            </div>
+                            <div class="d-1-3-numbers">
+                                <div class="number blink"></div>
+                                <div class="number"></div>
+                            </div>
+                        </div>
+                        <div class="d-1-4">
+                            <span>Nome: Gustavo Polonio</span>
+                            <br>
+                            <span>Partido: PFloc</span>
+                            <br>
+                            <span>Vice-Prefeito: Mãe Ouro</span>
+                        </div>
+                    </div>
+                    <div class="d-1-right">
+                        <div class="d-1-image">
+                            <img id="mayor-image" src="./images/84_1.png" alt="image candidate">
+                            Prefeito
+                        </div>
+                        <div class="d-1-image small">
+                            <img src="./images/84_2.jpg" alt="image candidate">
+                            Vice-Prefeito
+                        </div>
+                    </div>
+                </div>
+                <div class="d-2">
+                    <p>Aperte a tecla:
+                        <br/>
+                        CONFIRMA para CONFIRMAR este voto<br/>
+                        CORRIGE para REINICIAR este voto</p>
+                </div>
+            </div>
+            <div class="keyboard">
+                <div class="keyboard-numbers">
+                    <button onclick="clicked('1')">1</button>
+                    <button onclick="clicked('2')">2</button>
+                    <button onclick="clicked('3')">3</button>
+                    <button onclick="clicked('4')">4</button>
+                    <button onclick="clicked('5')">5</button>
+                    <button onclick="clicked('6')">6</button>
+                    <button onclick="clicked('7')">7</button>
+                    <button onclick="clicked('8')">8</button>
+                    <button onclick="clicked('9')">9</button>
+                    <div></div>
+                    <button onclick="clicked('0')">0</button>
+                </div>
+                <div class="keyboard-keys">
+                    <button id="white-button" onclick="white()">Branco</button>
+                    <button id="correct-button" onclick="correct()">Corrige</button>
+                    <button id="confirm-button" onclick="confirm()">Confirma</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./stages.js"></script>
+        <script src="./script.js"></script>
+    </body>
+
+</html>
