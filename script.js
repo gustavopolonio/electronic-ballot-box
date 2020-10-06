@@ -44,7 +44,11 @@ function updateInterface() {
         if (number === stage.candidates[i].number) {
             yourVoteFor.innerHTML = "SEU VOTO PARA"
             numberWrite.style.opacity = 1
-            description.innerHTML = `Nome: ${stage.candidates[i].name} <br/>Partido: ${stage.candidates[i].politicalParty}`
+            if (stage.candidates[i].vice) {
+                description.innerHTML = `Nome: ${stage.candidates[i].name} <br/>Partido: ${stage.candidates[i].politicalParty} <br/> Vice: ${stage.candidates[i].vice}`
+            } else {
+                description.innerHTML = `Nome: ${stage.candidates[i].name} <br/>Partido: ${stage.candidates[i].politicalParty}`
+            }
             footer.style.display = "block"
             let photoHTML = ""
             for (let x in stage.candidates[i].photos) {
@@ -60,7 +64,7 @@ function updateInterface() {
         } else {
             yourVoteFor.innerHTML = "SEU VOTO PARA"
             numberWrite.style.opacity = 1
-            description.innerHTML = `NÚMERO ERRADO <br/> <div class="null-vote blink">VOTO NULO</div>`
+            description.innerHTML = `NÚMERO ERRADO <br/> <br/><div class="null-vote blink">VOTO NULO</div>`
             footer.style.display = "block"
         }
     }
