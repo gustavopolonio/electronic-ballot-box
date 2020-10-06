@@ -60,7 +60,7 @@ function updateInterface() {
         } else {
             yourVoteFor.innerHTML = "SEU VOTO PARA"
             numberWrite.style.opacity = 1
-            description.innerHTML = `NÚMERO ERRADO <br/> <br/> <div class="null-vote blink">VOTO NULO</div>`
+            description.innerHTML = `NÚMERO ERRADO <br/> <div class="null-vote blink">VOTO NULO</div>`
             footer.style.display = "block"
         }
     }
