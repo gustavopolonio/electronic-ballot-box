@@ -30,12 +30,6 @@ body {
     justify-content: center;
 }
 
-#container {
-    display: flex;
-    padding: 36px;
-    background: var(--color-background);
-}
-
 .box-candidates {
     width: 968px;
     display: flex;
@@ -57,7 +51,6 @@ body {
     width: 100%;
     cursor: pointer;
     border: none;
-    outline: none;
     color: white;
     font-weight: bold;
     transition: 0.2s;
@@ -67,11 +60,9 @@ body {
     opacity: 0.9;
 }
 
-
 #city-councilor {
     background: linear-gradient(to right, #6a0996, #b224f2);
     border-radius: 0.2rem 0 0 0;
-
 }
 
 #mayor {
@@ -90,8 +81,15 @@ body {
     line-height: 2.2rem;
     color: #2a4a04;
 }
+
 .available-candidates .candidate {
     display: block;
+}
+
+#container {
+    display: flex;
+    padding: 36px;
+    background: var(--color-background);
 }
 
 .screen {
@@ -136,10 +134,9 @@ body {
     height: 70px;
     display: flex;
     align-items: center;
-
 }
 
-.d-1-left .d-1-3 .number-write{
+.d-1-left .d-1-3 .number-write {
     margin-right: 16px;
 }
 
@@ -148,7 +145,7 @@ body {
     padding-left: 0rem;
 }
 
-.d-1-3-numbers div{
+.d-1-3-numbers div {
     border: 1px solid black;
     width: 30px;
     height: 40px;
