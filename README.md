@@ -1,6 +1,8 @@
 # Electronic Ballot Box
 
-## Screeshots
+<p align="center">
+   <img src="https://github.com/gustavopolonio/electronic-ballot-box/blob/master/.github/web.png" width="880"/>
+</p>
 
 # :pushpin: Table of Contents
 
