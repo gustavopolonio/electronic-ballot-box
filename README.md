@@ -60,7 +60,7 @@ http://localhost:<port_number>/
 
 # :closed_book: License
 
-This project is under the MIT license. See the [license](https://github.com/gustavopolonio/article-preview-component/blob/master/LICENSE) for more informations.
+This project is under the MIT license. See the [license](https://github.com/gustavopolonio/electronic-ballot-box/blob/master/LICENSE) for more informations.
 
 ---
 
